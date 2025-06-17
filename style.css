@@ -1,0 +1,7 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("img/fondo.jpg"); /* Cambia el nombre si es diferente */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
