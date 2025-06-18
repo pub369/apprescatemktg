@@ -228,50 +228,7 @@
   }
 </style>
 
-<!-- Botones desplegables -->
-<button class="accordion">▶ SEO</button>
-<div class="panel">
-  <div class="embed-container">
-    <iframe loading="lazy"
-      src="https://www.canva.com/design/DAGqn7xxwWo/CfQWyDlPXeAG5C1S4leQUw/view?embed"
-      allowfullscreen="allowfullscreen" allow="fullscreen">
-    </iframe>
-  </div>
-  <p style="margin-top: 10px;">
-    <a href="https://www.canva.com/design/DAGqn7xxwWo/CfQWyDlPXeAG5C1S4leQUw/view?utm_content=DAGqn7xxwWo&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
-       target="_blank" rel="noopener" style="color: #2980b9;">
-       Gráfica Cuadro Comparativo UX y UI Moderno Azul</a> de Apprescate Apps
-  </p>
-</div>
 
-<button class="accordion">▶ UX</button>
-<div class="panel">
-  <p style="padding: 10px;">Contenido explicativo sobre experiencia de usuario (UX). Aquí puedes colocar infografías, videos o texto educativo.</p>
-</div>
-
-<button class="accordion">▶ Marketing</button>
-<div class="panel">
-  <p style="padding: 10px;">Consejos y estrategias de marketing digital, posicionamiento y campañas. Puedes agregar contenido visual aquí.</p>
-</div>
-
-<button class="accordion">▶ Diseño</button>
-<div class="panel">
-  <p style="padding: 10px;">Recursos sobre diseño visual, paletas de colores, tipografías, y cómo mejorar la estética de tu marca.</p>
-</div>
-
-<!-- Script para manejar el acordeón -->
-<script>
-  const accordions = document.querySelectorAll(".accordion");
-  accordions.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const panel = btn.nextElementSibling;
-      panel.classList.toggle("open");
-      btn.textContent = panel.classList.contains("open")
-        ? btn.textContent.replace("▶", "▼")
-        : btn.textContent.replace("▼", "▶");
-    });
-  });
-</script>
 
     </div>
   </header>
