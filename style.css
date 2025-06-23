@@ -1,9 +1,35 @@
-body {
-  font-family: Arial, sans-serif;
-  background-image: url("img/fondo.jpg"); /* Cambia el nombre si es diferente */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-
+/* Carrusel debajo del header */
+.carousel-section {
+  background-color: #f5f5f5;
+  padding: 40px 20px;
+  text-align: center;
 }
 
+.carousel-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+
+.carousel-item {
+  min-width: 300px;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
