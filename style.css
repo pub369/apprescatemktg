@@ -15,7 +15,7 @@ html, body {
   background-image: url('img/portada.gif');
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh; /* Mejor que height para móviles */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -160,6 +160,22 @@ footer {
   background-color: #333;
   color: white;
 }
+
+/* Imagenes responsive (por si agregas alguna <img>) */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Contenedor para múltiples tarjetas si lo necesitas */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Responsivo tablets */
 @media screen and (max-width: 768px) {
   .hero h1 {
     font-size: 2rem;
@@ -199,5 +215,31 @@ footer {
   .button {
     font-size: 0.9rem;
     padding: 10px;
+  }
+}
+
+/* Extra responsivo para móviles muy pequeños */
+@media screen and (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero button {
+    font-size: 0.85rem;
+    padding: 8px 16px;
+  }
+
+  .form-section input,
+  .form-section textarea {
+    font-size: 0.9rem;
+  }
+
+  .price {
+    font-size: 18px;
+  }
+
+  .button {
+    font-size: 0.8rem;
+    padding: 8px;
   }
 }
