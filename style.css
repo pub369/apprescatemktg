@@ -1,6 +1,3 @@
-
-
-/* SECCIÓN DESCARGAS */
 .descargas {
   display: flex;
   justify-content: center;
@@ -9,44 +6,11 @@
 }
 
 .descargas-box {
-  background: #ffffff;
   max-width: 520px;
   width: 100%;
+  background: white;
   padding: 30px;
   border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
   text-align: center;
-}
-
-.descargas-box h2 {
-  margin-bottom: 10px;
-}
-
-.descargas-subtitle {
-  color: #555;
-  margin-bottom: 30px;
-}
-
-.descarga-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #f0f2f5;
-  padding: 14px 16px;
-  border-radius: 10px;
-  margin-bottom: 12px;
-}
-
-.descarga-item a {
-  background: #00aaff;
-  color: white;
-  padding: 8px 14px;
-  border-radius: 20px;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.descarga-item a:hover {
-  background: #008ecc;
 }
