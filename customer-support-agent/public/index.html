@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#12362e" />
+  <meta name="description" content="Agente de atención al cliente instalable para pequeñas empresas" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Soporte Amigo</title>
+</head>
+<body>
+  <main class="app-shell">
+    <aside class="sidebar" aria-label="Configuración del agente">
+      <div class="brand"><span class="brand-mark">✦</span><div><strong>Soporte Amigo</strong><small>Agente para tu negocio</small></div></div>
+      <nav class="tabs" aria-label="Secciones">
+        <button class="tab active" data-panel="chat">Conversación</button>
+        <button class="tab" data-panel="settings">Personalidad</button>
+        <button class="tab" data-panel="memory">Memoria <span id="memoryCount">0</span></button>
+      </nav>
+      <div class="sidebar-footer"><button id="installBtn" class="secondary full" hidden>Instalar aplicación</button><button id="exportBtn" class="text-button">Descargar respaldo</button></div>
+    </aside>
+
+    <section class="workspace">
+      <header class="topbar"><div><p class="eyebrow">AGENTE ACTIVO</p><h1 id="businessTitle">Tu negocio</h1></div><div class="status"><span></span> Listo para atender</div></header>
+
+      <section id="chatPanel" class="panel active">
+        <div id="messages" class="messages" aria-live="polite"></div>
+        <div id="searchCard" class="search-card" hidden><div><p class="eyebrow">HERRAMIENTA DE BÚSQUEDA</p><strong id="searchTitle">Buscando información externa…</strong><div id="searchResults"></div></div><button id="closeSearch" class="icon-button" aria-label="Cerrar búsqueda">×</button></div>
+        <form id="composer" class="composer"><label class="sr-only" for="messageInput">Mensaje del cliente</label><textarea id="messageInput" rows="2" placeholder="Escribe como si fueras un cliente…"></textarea><div class="composer-actions"><button type="button" id="rememberBtn" class="secondary">Guardar como memoria</button><button type="submit" class="primary">Enviar <span>↗</span></button></div></form>
+      </section>
+
+      <section id="settingsPanel" class="panel">
+        <div class="content-head"><div><p class="eyebrow">CONFIGURACIÓN</p><h2>La personalidad de tu agente</h2><p>Los cambios se guardan en este dispositivo.</p></div><button id="saveProfileBtn" class="primary">Guardar cambios</button></div>
+        <form id="profileForm" class="settings-grid">
+          <label>Nombre del negocio<input name="businessName" maxlength="80" placeholder="Ej. Florería Primavera" /></label>
+          <label>Nombre del agente<input name="agentName" maxlength="40" placeholder="Ej. Sofía" /></label>
+          <label>Estilo de comunicación<select name="tone"><option value="amable">Amable y claro</option><option value="cercano">Cercano y casual</option><option value="formal">Formal y profesional</option><option value="directo">Directo y breve</option></select></label>
+          <label>Correo para escalar casos<input name="escalationEmail" type="email" placeholder="equipo@tunegocio.com" /></label>
+          <label class="wide">Mensaje base cuando no encuentra una respuesta<textarea name="welcome" rows="3" maxlength="280" placeholder="Ej. Déjame ayudarte con eso. ¿Me compartes un poco más de detalle?"></textarea></label>
+          <div class="wide faq-section"><div class="section-row"><div><h3>Respuestas frecuentes</h3><p>El agente busca coincidencias en estas preguntas antes de responder.</p></div><button type="button" id="addFaqBtn" class="secondary">+ Añadir respuesta</button></div><div id="faqList"></div></div>
+        </form>
+      </section>
+
+      <section id="memoryPanel" class="panel">
+        <div class="content-head"><div><p class="eyebrow">MEMORIA LOCAL</p><h2>Lo que el agente recuerda</h2><p>Se guarda únicamente en este navegador. Puedes borrar o exportar todo cuando quieras.</p></div><button id="clearMemoryBtn" class="danger">Borrar memoria</button></div>
+        <div id="memoryList" class="memory-list"></div>
+      </section>
+    </section>
+  </main>
+  <template id="faqTemplate"><div class="faq-row"><input data-faq="question" placeholder="Pregunta, ej. horario" /><textarea data-faq="answer" rows="2" placeholder="Respuesta del negocio"></textarea><button type="button" class="remove-faq" aria-label="Eliminar respuesta">×</button></div></template>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

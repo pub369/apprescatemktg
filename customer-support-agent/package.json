@@ -1,0 +1,11 @@
+{
+  "name": "soporte-amigo-pwa",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Agente de atención al cliente instalable para pequeñas empresas",
+  "scripts": {
+    "test": "node --test",
+    "start": "node server.js"
+  }
+}
