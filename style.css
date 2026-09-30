@@ -3,7 +3,8 @@
 
 html, body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  color: #1a1a2e;
+  color: #f5f5f5;
+  background: #050505;
   line-height: 1.6;
   scroll-behavior: smooth;
 }
@@ -38,7 +39,7 @@ ul { list-style: none; }
 /* ===== SECCIONES ===== */
 section { padding: 60px 20px; max-width: 1000px; margin: 0 auto; }
 .section-title { font-size: 2rem; margin-bottom: 8px; text-align: center; }
-.section-subtitle { text-align: center; color: #555; margin-bottom: 40px; font-size: 1.05rem; }
+.section-subtitle { text-align: center; color: #aeb9c0; margin-bottom: 40px; font-size: 1.05rem; }
 
 /* ===== DOS COLUMNAS: PRODUCTOS ===== */
 .productos-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-top: 10px; }
@@ -120,8 +121,8 @@ section { padding: 60px 20px; max-width: 1000px; margin: 0 auto; }
 
 /* ===== MODELO 3D ===== */
 section.modelo3d {
-  padding: 50px 20px; text-align: center; background: #f9f9f9;
-  border-top: 1px solid #eee; border-bottom: 1px solid #eee;
+  padding: 50px 20px; text-align: center; background: #0b0b0b; color: #f5f5f5;
+  border-top: 1px solid #262626; border-bottom: 1px solid #262626;
 }
 .modelo3d h2 { font-size: 1.6rem; margin-bottom: 20px; }
 model-viewer { width: 100%; max-width: 600px; height: 380px; margin: auto; }
@@ -143,9 +144,9 @@ model-viewer { width: 100%; max-width: 600px; height: 380px; margin: auto; }
 .btn-descargar:hover { background: #008ecc; }
 
 /* ===== FORMULARIO ===== */
-.form-section { background: #f5f5f5; padding: 50px 20px; text-align: center; }
+.form-section { background: #050505; color: #f5f5f5; padding: 50px 20px; text-align: center; }
 .form-section h2 { margin-bottom: 8px; }
-.form-section p { color: #555; margin-bottom: 25px; }
+.form-section p { color: #aeb9c0; margin-bottom: 25px; }
 .form-section form { max-width: 460px; margin: auto; display: flex; flex-direction: column; gap: 12px; text-align: left; }
 .form-section label { font-weight: bold; font-size: 0.9rem; margin-bottom: 3px; display: block; }
 .form-section input, .form-section select, .form-section textarea {
@@ -159,10 +160,6 @@ model-viewer { width: 100%; max-width: 600px; height: 380px; margin: auto; }
   transition: background 0.2s;
 }
 .form-section button:hover { background: #008ecc; }
-
-/* ===== FOOTER ===== */
-footer { background: #1a1a2e; color: white; text-align: center; padding: 25px 20px; font-size: 0.9rem; }
-footer .marca { font-size: 1.1rem; font-weight: bold; margin-bottom: 4px; }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 700px) {
