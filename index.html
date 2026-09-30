@@ -1,226 +1,267 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <link rel="stylesheet" href="styles.css?v=999">
+  <link rel="stylesheet" href="style.css?v=2000">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>APPRESCATESMKTG</title>
+  <title>APPRESCATESMKTG — Plantillas de Landing Page y Agentes para tu Negocio</title>
+  <meta name="description" content="Plantillas de landing page listas para usar y agentes de IA para emprendimientos y empresas. Herramientas que funcionan, entregadas listas para tu negocio.">
 
   <!-- Model Viewer -->
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-
-  <style>
-    /* Reset básico */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html, body {
-      font-family: Arial, sans-serif;
-      height: 100%;
-    }
-
-    /* HERO */
-    .hero {
-      background-image: url('img/portada.gif');
-      background-size: cover;
-      background-position: center;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      text-align: center;
-      color: white;
-    }
-
-    .overlay {
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.4);
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 1;
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-    }
-
-    .hero button {
-      padding: 12px 25px;
-      background-color: #00aaff;
-      border: none;
-      border-radius: 25px;
-      color: white;
-      cursor: pointer;
-      font-size: 1rem;
-    }
-
-    .hero button:hover {
-      background-color: #008ecc;
-    }
-
-    /* FORMULARIO */
-    .form-section {
-      background: #f5f5f5;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    .form-section form {
-      max-width: 400px;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    input, textarea {
-      padding: 10px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      font-size: 1rem;
-    }
-
-    .form-section button {
-      background: #00aaff;
-      color: white;
-      border: none;
-      padding: 10px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .form-section button:hover {
-      background: #008ecc;
-    }
-
-    /* CARD */
-    .card {
-      width: 300px;
-      background: white;
-      margin: 40px auto;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,.1);
-      text-align: center;
-    }
-
-    .title {
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    .subtitle {
-      color: #1e90ff;
-      margin: 10px 0;
-    }
-
-    ol {
-      text-align: left;
-      padding-left: 20px;
-      font-size: 14px;
-    }
-
-    .price {
-      font-size: 24px;
-      margin: 15px 0;
-      font-weight: bold;
-    }
-
-    .button {
-      display: block;
-      background: #00aaff;
-      color: white;
-      padding: 10px;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .button:hover {
-      background: #008ecc;
-    }
-
-    /* MODELO 3D */
-    section.modelo3d {
-      padding: 40px 20px;
-      text-align: center;
-      background: #f9f9f9;
-    }
-
-    model-viewer {
-      width: 100%;
-      max-width: 600px;
-      height: 400px;
-      margin: auto;
-    }
-
-    /* FOOTER */
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 15px;
-    }
-
-    /* RESPONSIVE */
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2rem;
-      }
-    }
-  </style>
 </head>
 
 <body>
 
-  <!-- HERO -->
+  <!-- ===== HERO (GIF - mantener) ===== -->
   <header class="hero">
     <div class="overlay"></div>
     <div class="hero-content">
       <h1>APPRESCATESMKTG</h1>
-      <button onclick="document.getElementById('contacto').scrollIntoView()">Contacto</button>
+      <p>Plantillas de landing page y agentes listos para tu emprendimiento o empresa.</p>
+      <a href="#plantillas" class="btn">Ver plantillas</a>
+      <a href="#agentes" class="btn btn-secondary">Ver agentes</a>
     </div>
   </header>
 
-  <!-- FORMULARIO -->
-  <section id="contacto" class="form-section">
-    <h2>Contáctanos</h2>
+  <!-- ===== LO QUE OFRECEMOS ===== -->
+  <section>
+    <h2 class="section-title">Lo que ofrecemos</h2>
+    <p class="section-subtitle">Herramientas listas para usar, diseñadas para que tu negocio funcione sin complicaciones.</p>
 
-    <form name="contacto" method="POST" data-netlify="true">
-      <input type="hidden" name="form-name" value="contacto" />
-      <input type="text" name="name" placeholder="Nombre" required />
-      <input type="email" name="email" placeholder="Correo" required />
-      <textarea name="message" placeholder="Mensaje" rows="5" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
+    <div class="productos-grid">
+
+      <div class="producto-card">
+        <div class="icon">📄</div>
+        <h3>Plantillas de Landing Page</h3>
+        <p>Páginas de conversión listas para usar, adaptadas a tu negocio. Sin diseñar desde cero, sin complicaciones.</p>
+        <ul class="features">
+          <li>Varias opciones por objetivo: ventas, captación de leads, registro de evento, producto…</li>
+          <li>Diseño limpio y profesional, adaptable a tu marca</li>
+          <li>Entregas en HTML/CSS o adaptable a tu plataforma</li>
+          <li>Incluye guía de uso y personalización</li>
+        </ul>
+        <a href="#plantillas" class="btn-sm">Ver catálogo</a>
+      </div>
+
+      <div class="producto-card">
+        <div class="icon">🤖</div>
+        <h3>Agentes para tu Negocio</h3>
+        <p>Agentes listos que ejecutan tareas reales de tu negocio. Activan, configuran y comienzan a trabajar.</p>
+        <ul class="features">
+          <li>Atención a clientes y leads</li>
+          <li>Soporte post-venta basado en tu info</li>
+          <li>Generación de contenido para tu marca</li>
+          <li>Análisis y reportes de datos</li>
+          <li>Entrega en Telegram, web, o ejecutados por nosotros</li>
+        </ul>
+        <a href="#agentes" class="btn-sm">Ver tipos</a>
+      </div>
+
+    </div>
   </section>
 
-  <!-- CARD -->
-  <div class="card">
-    <div class="title">Plan Marca Personal</div>
-    <div class="subtitle">Incluye:</div>
-    <ol>
-      <li>Diagnóstico estratégico</li>
-      <li>Guías y plantillas</li>
-      <li>FODA personal</li>
-      <li>Informe de marca</li>
+  <!-- ===== GALERIA (mantener, renombrar) ===== -->
+  <section class="galeria">
+    <div class="galeria-heading">
+      <p class="galeria-kicker">Trabajos previos</p>
+      <h2>Ejemplos de lo que hacemos</h2>
+      <p>Una muestra de experiencias digitales creadas para marcas con algo que contar.</p>
+    </div>
+
+    <div class="galeria-grid">
+      <article class="sitio-card sitio-card-destacado">
+        <div class="sitio-imagen">
+          <img src="img/web1.png" alt="Vista previa de sitio web corporativo" loading="lazy">
+          <span class="sitio-etiqueta">Corporativo</span>
+        </div>
+        <div class="sitio-info">
+          <h3>Presencia que inspira confianza</h3>
+          <a href="#solicitar" class="sitio-link">Planteá tu proyecto <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="sitio-card">
+        <div class="sitio-imagen">
+          <img src="img/web2.png" alt="Vista previa de sitio web para emprendimiento" loading="lazy">
+          <span class="sitio-etiqueta">Emprendimiento</span>
+        </div>
+        <div class="sitio-info">
+          <h3>Una marca lista para crecer</h3>
+          <a href="#solicitar" class="sitio-link">Planteá tu proyecto <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="sitio-card">
+        <div class="sitio-imagen">
+          <img src="img/web3.png" alt="Vista previa de sitio web moderno" loading="lazy">
+          <span class="sitio-etiqueta">Marca personal</span>
+        </div>
+        <div class="sitio-info">
+          <h3>Tu propuesta, en primer plano</h3>
+          <a href="#solicitar" class="sitio-link">Planteá tu proyecto <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== PLANTILLAS ===== -->
+  <section id="plantillas" style="background:#fafafa; border-top:1px solid #eee; border-bottom:1px solid #eee;">
+    <h2 class="section-title">Plantillas de Landing Page</h2>
+    <p class="section-subtitle">Elige el objetivo, entrega lista. Adaptamos a tu marca.</p>
+
+    <div class="cat-grid">
+      <div class="cat-card">
+        <h4>🎯 Landing de Ventas</h4>
+        <p>Página para convertir visitas en clientes. Estructura probada: headline, beneficios, prueba social, CTA.</p>
+        <span class="precio">Desde $XX</span>
+      </div>
+
+      <div class="cat-card">
+        <h4>📩 Captación de Leads</h4>
+        <p>Página para recolectar contactos: oferta, formulario, incentivo. Ideal para builds de lista o prospects.</p>
+        <span class="precio">Desde $XX</span>
+      </div>
+
+      <div class="cat-card">
+        <h4>🎪 Registro de Evento</h4>
+        <p>Página para inscripciones: detalles del evento, fechas, formulario de registro, confirmación.</p>
+        <span class="precio">Desde $XX</span>
+      </div>
+
+      <div class="cat-card">
+        <h4>🛍️ Página de Producto</h4>
+        <p>Página para presentar un producto o servicio: descripción, beneficios, precio, CTA de compra.</p>
+        <span class="precio">Desde $XX</span>
+      </div>
+
+      <div class="cat-card">
+        <h4>📱 Página de Lanzamiento</h4>
+        <p>Página de aterrizaje para lanzamientos: countdown, detalles, lista de espera, CTA.</p>
+        <span class="precio">Desde $XX</span>
+      </div>
+
+      <div class="cat-card">
+        <h4>📋 Landing Personalizada</h4>
+        <p>Necesitas algo a medida? Hablamos de tu caso y diseñamos la landing que tu negocio necesita.</p>
+        <span class="precio">A consultar</span>
+      </div>
+    </div>
+
+    <p style="text-align:center; margin-top:30px; color:#666; font-size:0.9rem;">
+      * Precios orientativos — contactanos para cotización exacta según tu caso.
+    </p>
+
+    <div style="text-align:center; margin-top:20px;">
+      <a href="#solicitar" class="btn-sm" style="display:inline-block; padding:12px 30px; background:#00aaff; color:white; border-radius:25px; font-weight:bold; text-decoration:none;">Solicitar una plantilla</a>
+    </div>
+  </section>
+
+  <!-- ===== AGENTES ===== -->
+  <section id="agentes">
+    <h2 class="section-title">Agentes para tu Negocio</h2>
+    <p class="section-subtitle">Agentes listos que ejecutan tareas reales. No un chatbot genérico — un agente con contexto de tu negocio.</p>
+
+    <div class="agentes-list">
+      <div class="agente-card">
+        <h4>📞 Agente de Atención</h4>
+        <p>Atiende a tus clientes y leads con información real de tu negocio: productos, precios, horarios, políticas. Responde preguntas y deriva a humano cuando necesita.</p>
+      </div>
+
+      <div class="agente-card">
+        <h4>🛠️ Agente de Soporte</h4>
+        <p>Soporta a tus clientes post-venta. Basado en tu documentación real: manuales, FAQs, procedimientos. Resuelve lo rutinario, escalar lo complejo.</p>
+      </div>
+
+      <div class="agente-card">
+        <h4>✍️ Agente de Contenido</h4>
+        <p>Genera contenido para tu marca: posts para redes, emails, descripciones de productos, copy para campañas. Con la voz y estilo de tu marca.</p>
+      </div>
+
+      <div class="agente-card">
+        <h4>📊 Agente de Análisis</h4>
+        <p>Analiza datos de tu negocio y te entrega reportes: métricas, tendencias, alertas. Tú recibes el análisis, no los datos crudos.</p>
+      </div>
+
+      <div class="agente-card">
+        <h4>🔁 Agente de Automatización</h4>
+        <p>Ejecuta tareas recurrentes: seguimiento de leads, recordatorios, actualizaciones, reportes periódicos. Se ejecuta solo o tú lo activas.</p>
+      </div>
+
+      <div class="agente-card">
+        <h4>🎯 Agente a Medida</h4>
+        <p>Tienes una tarea específica que no está aquí? Hablamos, diseñamos el agente que resuelve exactamente eso para tu negocio.</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:40px; margin-bottom:10px; text-align:center;">Cómo se entrega un agente</h3>
+    <p style="color:#555; margin-bottom:20px; text-align:center;">Trabajamos contigo para que el agente funcione en tu contexto real. El proceso es:</p>
+    <ol style="padding-left:20px; max-width:600px; margin:0 auto 30px; color:#555;">
+      <li><strong>Diagnóstico</strong> — Entendemos tu negocio, tu necesidad, tu contexto.</li>
+      <li><strong>Configuración</strong> — El agente se configura con tu información, tus herramientas, tus reglas.</li>
+      <li><strong>Entrega</strong> — El agente está listo: en Telegram, en tu web, o ejecutado por nosotros.</li>
+      <li><strong>Acompañamiento</strong> — Ajustamos, mejoramos, y nos aseguramos de que funcione para ti.</li>
     </ol>
-    <div class="price">$0.00</div>
-    <a href="#" class="button">Solicitar</a>
-  </div>
 
-  <!-- MODELO 3D -->
+    <div style="text-align:center; margin-top:10px;">
+      <a href="#solicitar" class="btn-sm" style="display:inline-block; padding:12px 30px; background:#00aaff; color:white; border-radius:25px; font-weight:bold; text-decoration:none;">Diagnosticar un agente</a>
+    </div>
+  </section>
+
+  <!-- ===== PLANTILLA MARCA PERSONAL (servicio adicional) ===== -->
+  <section style="background:#fafafa; border-top:1px solid #eee;">
+    <h2 class="section-title">Otro servicio</h2>
+    <p class="section-subtitle">Si necesitás trabajar también la marca, contáianos.</p>
+    <div class="card">
+      <div class="title">Plan Marca Personal</div>
+      <div class="subtitle">Incluye:</div>
+      <ol>
+        <li>Diagnóstico estratégico</li>
+        <li>Guías y plantillas</li>
+        <li>FODA personal</li>
+        <li>Informe de marca</li>
+      </ol>
+      <div class="price">$0.00</div>
+      <a href="#solicitar" class="button">Solicitar</a>
+    </div>
+  </section>
+
+  <!-- ===== RECURSOS GRATIS ===== -->
+  <section id="recursos" style="background:#fafafa; border-top:1px solid #eee;">
+    <h2 class="section-title">Recursos Gratuitos</h2>
+    <p class="section-subtitle">Guías y plantillas prácticas para potenciar tu negocio. Descarga, usa, aplicá.</p>
+
+    <div class="recursos-grid">
+      <div class="recurso-card">
+        <div class="recurso-icon">📘</div>
+        <h4>Guía Práctica de Marketing</h4>
+        <p>Guía con conceptos y herramientas prácticas para tu negocio.</p>
+        <a href="/downloads/guia-marketing.pdf" class="btn-descargar" download>Descargar PDF</a>
+      </div>
+
+      <div class="recurso-card">
+        <div class="recurso-icon">📝</div>
+        <h4>Plantilla de FODA Personal</h4>
+        <p>Plantilla para hacer tu FODA de forma clara y estructurada.</p>
+        <a href="#" class="btn-descargar">Próximamente</a>
+      </div>
+
+      <div class="recurso-card">
+        <div class="recurso-icon">📐</div>
+        <h4>Plantilla de Diagnóstico de Marca</h4>
+        <p>Herramienta para evaluar tu marca actual y identificar oportunidades.</p>
+        <a href="#" class="btn-descargar">Próximamente</a>
+      </div>
+    </div>
+
+    <p style="text-align:center; margin-top:30px; color:#666; font-size:0.9rem;">
+      Más recursos gratuitos en camino. Contactanos para enterarte.
+    </p>
+  </section>
+
+  <!-- ===== MODELO 3D (explorar) ===== -->
   <section class="modelo3d">
-    <h2>Explora nuestro modelo 3D</h2>
-
+    <h2>Explorá nuestro modelo 3D</h2>
     <model-viewer
       src="banner3d.glb?v=3"
       alt="Modelo 3D"
@@ -231,9 +272,43 @@
       exposure="1">
     </model-viewer>
   </section>
-  <!-- FOOTER -->
+
+  <!-- ===== SOLICITAR / CONTACTO ===== -->
+  <section id="solicitar" class="form-section">
+    <h2>Solicitar</h2>
+    <p>Dime qué necesitas y te respondemos para iniciar.</p>
+
+    <form name="solicitar" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="solicitar">
+
+      <label for="name">Nombre</label>
+      <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+
+      <label for="tipo">¿Qué te interesa?</label>
+      <select id="tipo" name="tipo" required>
+        <option value="">Seleccioná…</option>
+        <option value="plantilla">Plantilla de landing page</option>
+        <option value="agente">Agente para mi negocio</option>
+        <option value="ambos">Ambos (plantilla + agente)</option>
+        <option value="marca">Plan Marca Personal</option>
+        <option value="otro">Otra consulta</option>
+      </select>
+
+      <label for="mensaje">Cuéntanos tu caso (opcional pero útil)</label>
+      <textarea id="mensaje" name="mensaje" rows="4" placeholder="Qué necesitas, tu negocio, lo que tengas en mente…"></textarea>
+
+      <button type="submit">Enviar solicitud</button>
+    </form>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
   <footer>
-    <p>APPRESCATESMKTG®</p>
+    <div class="marca">APPRESCATESMKTG®</div>
+    <p>Plantillas de landing page y agentes para emprendimientos y empresas.</p>
+    <p style="margin-top:10px; font-size:0.8rem; opacity:0.7;">Llegamos a tu rescate con herramientas que funcionan.</p>
   </footer>
 
 </body>
