@@ -1,273 +1,396 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <link rel="stylesheet" href="style.css?v=2001">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>APPRESCATESMKTG — Plantillas de Landing Page y Agentes para tu Negocio</title>
-  <meta name="description" content="Plantillas de landing page listas para usar y agentes de IA para emprendimientos y empresas. Herramientas que funcionan, entregadas listas para tu negocio.">
+  <meta name="description" content="Plantillas de landing page listas para usar y agentes de IA para emprendimientos y empresas. Herramientas que funcionan, entregadas listas para tu negocio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=2024" />
 
 </head>
-
 <body>
 
-  <!-- ===== HERO (GIF - mantener) ===== -->
+  <!-- ===== NAVEGACION ===== -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="32" height="32" rx="8" fill="url(#g1)"/>
+          <path d="M8 22L16 10L24 22" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#00c9ff"/>
+              <stop offset="1" stop-color="#4ade80"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>APPRESCATESMKTG</span>
+      </a>
+      <div class="nav-links">
+        <a href="#ofrecemos">Ofrecemos</a>
+        <a href="#galeria">Trabajos</a>
+        <a href="#plantillas">Plantillas</a>
+        <a href="#agentes">Agentes</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#solicitar" class="nav-cta">Hablemos</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
   <header class="hero">
-    <div class="overlay"></div>
+    <div class="hero-bg"></div>
     <div class="hero-content">
-      <h1>APPRESCATESMKTG</h1>
-      <p>Plantillas de landing page y agentes listos para tu emprendimiento o empresa.</p>
-      <a href="#plantillas" class="btn">Ver plantillas</a>
-      <a href="#agentes" class="btn btn-secondary">Ver agentes</a>
+      <div class="hero-actions">
+        <a href="#plantillas" class="btn btn-primary">Ver plantillas</a>
+        <a href="#agentes" class="btn btn-primary">Conocer agentes</a>
+      </div>
     </div>
   </header>
 
-  <!-- ===== LO QUE OFRECEMOS ===== -->
-  <section>
-    <h2 class="section-title">Lo que ofrecemos</h2>
-    <p class="section-subtitle">Herramientas listas para usar, diseñadas para que tu negocio funcione sin complicaciones.</p>
-
+  <!-- ===== OFRECEMOS ===== -->
+  <section id="ofrecemos">
+    <div class="section-header reveal">
+      <span class="section-kicker">Lo que ofrecemos</span>
+      <h2 class="section-title">Herramientas que funcionan, entregadas listas</h2>
+      <p class="section-subtitle">Dos líneas de producto, diseñadas para que avances sin tener que construir desde cero.</p>
+    </div>
     <div class="productos-grid">
-
-      <div class="producto-card">
-        <div class="icon">📄</div>
+      <div class="producto-card reveal">
         <h3>Plantillas de Landing Page</h3>
         <p>Páginas de conversión listas para usar, adaptadas a tu negocio. Sin diseñar desde cero, sin complicaciones.</p>
-        <ul class="features">
+        <ul class="producto-features">
           <li>Varias opciones por objetivo: ventas, captación de leads, registro de evento, producto…</li>
           <li>Diseño limpio y profesional, adaptable a tu marca</li>
           <li>Entregas en HTML/CSS o adaptable a tu plataforma</li>
           <li>Incluye guía de uso y personalización</li>
         </ul>
-        <a href="#plantillas" class="btn-sm">Ver catálogo</a>
+        <a href="#plantillas" class="btn-sm btn-sm-primary">Ver catálogo</a>
       </div>
-
-      <div class="producto-card">
-        <div class="icon">🤖</div>
+      <div class="producto-card reveal">
         <h3>Agentes para tu Negocio</h3>
         <p>Agentes listos que ejecutan tareas reales de tu negocio. Activan, configuran y comienzan a trabajar.</p>
-        <ul class="features">
+        <ul class="producto-features">
           <li>Atención a clientes y leads</li>
           <li>Soporte post-venta basado en tu info</li>
           <li>Generación de contenido para tu marca</li>
           <li>Análisis y reportes de datos</li>
           <li>Entrega en Telegram, web, o ejecutados por nosotros</li>
         </ul>
-        <a href="#agentes" class="btn-sm">Ver tipos</a>
+        <a href="#agentes" class="btn-sm btn-sm-primary">Ver tipos</a>
       </div>
-
     </div>
   </section>
 
-  <!-- ===== GALERIA (mantener, renombrar) ===== -->
-  <section class="galeria">
-    <div class="galeria-heading">
-      <p class="galeria-kicker">Trabajos previos</p>
-      <h2>Ejemplos de lo que hacemos</h2>
-      <p>Una muestra de experiencias digitales creadas para marcas con algo que contar.</p>
-    </div>
-
-    <div class="galeria-grid">
-      <article class="sitio-card sitio-card-destacado">
-        <div class="sitio-imagen">
-          <img src="img/web1.png" alt="Vista previa de sitio web corporativo" loading="lazy">
-          <span class="sitio-etiqueta">Corporativo</span>
-        </div>
-        <div class="sitio-info">
-          <h3>Presencia que inspira confianza</h3>
-          <a href="#solicitar" class="sitio-link">Planteá tu proyecto <span aria-hidden="true">→</span></a>
-        </div>
-      </article>
-
-      <article class="sitio-card">
-        <div class="sitio-imagen">
-          <img src="img/web2.png" alt="Vista previa de sitio web para emprendimiento" loading="lazy">
-          <span class="sitio-etiqueta">Emprendimiento</span>
-        </div>
-        <div class="sitio-info">
-          <h3>Una marca lista para crecer</h3>
-          <a href="#solicitar" class="sitio-link">Planteá tu proyecto <span aria-hidden="true">→</span></a>
-        </div>
-      </article>
-
-      <article class="sitio-card">
-        <div class="sitio-imagen">
-          <img src="img/web3.png" alt="Vista previa de sitio web moderno" loading="lazy">
-          <span class="sitio-etiqueta">Marca personal</span>
-        </div>
-        <div class="sitio-info">
-          <h3>Tu propuesta, en primer plano</h3>
-          <a href="#solicitar" class="sitio-link">Planteá tu proyecto <span aria-hidden="true">→</span></a>
-        </div>
-      </article>
+  <!-- ===== GALERIA ===== -->
+  <section class="galeria" id="galeria">
+    <div class="galeria-inner">
+      <div class="galeria-header reveal">
+        <span class="galeria-kicker">Trabajos previos</span>
+        <h2>Ejemplos de lo que hacemos</h2>
+        <p>Una muestra de experiencias digitales creadas para marcas con algo que contar.</p>
+      </div>
+      <div class="galeria-grid">
+        <article class="sitio-card reveal">
+          <div class="sitio-imagen">
+            <img src="img/web1.png" alt="Vista previa de sitio web corporativo" loading="lazy" />
+            <span class="sitio-etiqueta">Corporativo</span>
+          </div>
+          <div class="sitio-info">
+            <h3>Presencia que inspira confianza</h3>
+            <a href="#solicitar" class="sitio-link">Planteá tu proyecto <span class="arrow">→</span></a>
+          </div>
+        </article>
+        <article class="sitio-card reveal">
+          <div class="sitio-imagen">
+            <img src="img/web3.png" alt="Vista previa de sitio web moderno" loading="lazy" />
+            <span class="sitio-etiqueta">Marca personal</span>
+          </div>
+          <div class="sitio-info">
+            <h3>Tu propuesta, en primer plano</h3>
+            <a href="#solicitar" class="sitio-link">Planteá tu proyecto <span class="arrow">→</span></a>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
   <!-- ===== PLANTILLAS ===== -->
-  <section id="plantillas" style="background:#050505; border-top:1px solid #262626; border-bottom:1px solid #262626;">
-    <h2 class="section-title">Plantillas de Landing Page</h2>
-    <p class="section-subtitle">Elige el objetivo, entrega lista. Adaptamos a tu marca.</p>
-
+  <section id="plantillas" style="background:#0d1114; border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+    <div class="section-header reveal">
+      <span class="section-kicker">Catálogo</span>
+      <h2 class="section-title">Plantillas de Landing Page</h2>
+      <p class="section-subtitle">Elige el objetivo, entrega lista. Adaptamos a tu marca.</p>
+    </div>
     <div class="cat-grid">
-      <div class="cat-card">
-        <h4>🎯 Landing de Ventas</h4>
+      <div class="cat-card reveal">
+        <h4>Landing de Ventas</h4>
         <p>Página para convertir visitas en clientes. Estructura probada: headline, beneficios, prueba social, CTA.</p>
-        <span class="precio">Desde $XX</span>
+        <span class="cat-link">Ver estructura <span>→</span></span>
+        <span class="cat-price featured">Desde $XX</span>
       </div>
-
-      <div class="cat-card">
-        <h4>📩 Captación de Leads</h4>
+      <div class="cat-card reveal">
+        <h4>Captación de Leads</h4>
         <p>Página para recolectar contactos: oferta, formulario, incentivo. Ideal para builds de lista o prospects.</p>
-        <span class="precio">Desde $XX</span>
+        <span class="cat-link">Ver estructura <span>→</span></span>
+        <span class="cat-price">Desde $XX</span>
       </div>
-
-      <div class="cat-card">
+      <div class="cat-card reveal">
         <h4>🎪 Registro de Evento</h4>
         <p>Página para inscripciones: detalles del evento, fechas, formulario de registro, confirmación.</p>
-        <span class="precio">Desde $XX</span>
+        <span class="cat-link">Ver estructura <span>→</span></span>
+        <span class="cat-price">Desde $XX</span>
       </div>
-
-      <div class="cat-card">
+      <div class="cat-card reveal">
         <h4>🛍️ Página de Producto</h4>
         <p>Página para presentar un producto o servicio: descripción, beneficios, precio, CTA de compra.</p>
-        <span class="precio">Desde $XX</span>
+        <span class="cat-link">Ver estructura <span>→</span></span>
+        <span class="cat-price">Desde $XX</span>
       </div>
-
-      <div class="cat-card">
-        <h4>📱 Página de Lanzamiento</h4>
+      <div class="cat-card reveal">
+        <h4>Página de Lanzamiento</h4>
         <p>Página de aterrizaje para lanzamientos: countdown, detalles, lista de espera, CTA.</p>
-        <span class="precio">Desde $XX</span>
+        <span class="cat-link">Ver estructura <span>→</span></span>
+        <span class="cat-price">Desde $XX</span>
       </div>
-
-      <div class="cat-card">
-        <h4>📋 Landing Personalizada</h4>
+      <div class="cat-card reveal">
+        <h4>Landing Personalizada</h4>
         <p>Necesitas algo a medida? Hablamos de tu caso y diseñamos la landing que tu negocio necesita.</p>
-        <span class="precio">A consultar</span>
+        <span class="cat-link">Conversar <span>→</span></span>
+        <span class="cat-price featured">A consultar</span>
       </div>
     </div>
-
-    <p style="text-align:center; margin-top:30px; color:#aeb9c0; font-size:0.9rem;">
+    <div style="text-align:center; margin-top:36px;" class="reveal">
+      <a href="#solicitar" class="btn-sm btn-sm-primary">Solicitar una plantilla</a>
+    </div>
+    <p style="text-align:center; margin-top:14px; color:var(--text-muted); font-size:0.8rem;">
       * Precios orientativos — contactanos para cotización exacta según tu caso.
     </p>
-
-    <div style="text-align:center; margin-top:20px;">
-      <a href="#solicitar" class="btn-sm" style="display:inline-block; padding:12px 30px; background:#00aaff; color:white; border-radius:25px; font-weight:bold; text-decoration:none;">Solicitar una plantilla</a>
-    </div>
   </section>
 
   <!-- ===== AGENTES ===== -->
   <section id="agentes">
-    <h2 class="section-title">Agentes para tu Negocio</h2>
-    <p class="section-subtitle">Agentes listos que ejecutan tareas reales. No un chatbot genérico — un agente con contexto de tu negocio.</p>
-
+    <div class="section-header reveal">
+      <span class="section-kicker">Agentes</span>
+      <h2 class="section-title">Agentes para tu Negocio</h2>
+      <p class="section-subtitle">Agentes listos que ejecutan tareas reales. No un chatbot genérico — un agente con contexto de tu negocio.</p>
+    </div>
     <div class="agentes-list">
-      <div class="agente-card">
-        <h4>📞 Agente de Atención</h4>
+      <div class="agente-card reveal">
+        <h4>Agente de Atención</h4>
         <p>Atiende a tus clientes y leads con información real de tu negocio: productos, precios, horarios, políticas. Responde preguntas y deriva a humano cuando necesita.</p>
       </div>
-
-      <div class="agente-card">
-        <h4>🛠️ Agente de Soporte</h4>
+      <div class="agente-card reveal">
+        <h4>Agente de Soporte</h4>
         <p>Soporta a tus clientes post-venta. Basado en tu documentación real: manuales, FAQs, procedimientos. Resuelve lo rutinario, escalar lo complejo.</p>
       </div>
-
-      <div class="agente-card">
+      <div class="agente-card reveal">
         <h4>✍️ Agente de Contenido</h4>
         <p>Genera contenido para tu marca: posts para redes, emails, descripciones de productos, copy para campañas. Con la voz y estilo de tu marca.</p>
       </div>
-
-      <div class="agente-card">
+      <div class="agente-card reveal">
         <h4>📊 Agente de Análisis</h4>
         <p>Analiza datos de tu negocio y te entrega reportes: métricas, tendencias, alertas. Tú recibes el análisis, no los datos crudos.</p>
       </div>
-
-      <div class="agente-card">
-        <h4>🔁 Agente de Automatización</h4>
+      <div class="agente-card reveal">
+        <h4>Agente de Automatización</h4>
         <p>Ejecuta tareas recurrentes: seguimiento de leads, recordatorios, actualizaciones, reportes periódicos. Se ejecuta solo o tú lo activas.</p>
       </div>
-
-      <div class="agente-card">
-        <h4>🎯 Agente a Medida</h4>
+      <div class="agente-card reveal">
+        <h4>Agente a Medida</h4>
         <p>Tienes una tarea específica que no está aquí? Hablamos, diseñamos el agente que resuelve exactamente eso para tu negocio.</p>
       </div>
     </div>
-
-    <h3 style="margin-top:40px; margin-bottom:10px; text-align:center;">Cómo se entrega un agente</h3>
-    <p style="color:#555; margin-bottom:20px; text-align:center;">Trabajamos contigo para que el agente funcione en tu contexto real. El proceso es:</p>
-    <ol style="padding-left:20px; max-width:600px; margin:0 auto 30px; color:#555;">
-      <li><strong>Diagnóstico</strong> — Entendemos tu negocio, tu necesidad, tu contexto.</li>
-      <li><strong>Configuración</strong> — El agente se configura con tu información, tus herramientas, tus reglas.</li>
-      <li><strong>Entrega</strong> — El agente está listo: en Telegram, en tu web, o ejecutado por nosotros.</li>
-      <li><strong>Acompañamiento</strong> — Ajustamos, mejoramos, y nos aseguramos de que funcione para ti.</li>
-    </ol>
-
-    <div style="text-align:center; margin-top:10px;">
-      <a href="#solicitar" class="btn-sm" style="display:inline-block; padding:12px 30px; background:#00aaff; color:white; border-radius:25px; font-weight:bold; text-decoration:none;">Diagnosticar un agente</a>
+    <div style="margin-top:48px;" class="reveal">
+      <h3 style="text-align:center; font-size:1.2rem; font-weight:600; margin-bottom:10px;">Cómo se entrega un agente</h3>
+      <p style="color:var(--text-secondary); margin-bottom:20px; text-align:center; font-size:0.92rem;">Trabajamos contigo para que el agente funcione en tu contexto real.</p>
+      <ol style="padding-left:20px; max-width:600px; margin:0 auto 32px; color:var(--text-secondary); font-size:0.88rem; line-height:1.8;">
+        <li><strong>Diagnóstico</strong> — Entendemos tu negocio, tu necesidad, tu contexto.</li>
+        <li><strong>Configuración</strong> — El agente se configura con tu información, tus herramientas, tus reglas.</li>
+        <li><strong>Entrega</strong> — El agente está listo: en Telegram, en tu web, o ejecutado por nosotros.</li>
+        <li><strong>Acompañamiento</strong> — Ajustamos, mejoramos, y nos aseguramos de que funcione para ti.</li>
+      </ol>
+      <div style="text-align:center;">
+        <a href="#solicitar" class="btn-sm btn-sm-primary">Diagnosticar un agente</a>
+      </div>
     </div>
   </section>
 
   <!-- ===== RECURSOS GRATIS ===== -->
-  <section id="recursos" style="background:#050505; border-top:1px solid #262626;">
-    <h2 class="section-title">Recursos Gratuitos</h2>
-    <p class="section-subtitle">Guías y plantillas prácticas para potenciar tu negocio. Descarga, usa, aplicá.</p>
-
+  <section id="recursos" class="recursos-section">
+    <div class="section-header reveal">
+      <span class="section-kicker">Gratuitos</span>
+      <h2 class="section-title">Recursos Gratuitos</h2>
+      <p class="section-subtitle">Guías y plantillas prácticas para potenciar tu negocio. Descarga, usa, aplicá.</p>
+    </div>
     <div class="recursos-grid">
-      <div class="recurso-card">
+      <div class="recurso-card reveal">
         <div class="recurso-icon">📘</div>
         <h4>Guía Práctica de Marketing</h4>
         <p>Guía con conceptos y herramientas prácticas para tu negocio.</p>
-        <a href="/downloads/guia-marketing.pdf" class="btn-descargar" download>Descargar PDF</a>
+        <a href="/downloads/guia-marketing.pdf" class="btn-sm btn-sm-primary" download>Descargar PDF</a>
       </div>
-
-      <div class="recurso-card">
+      <div class="recurso-card reveal">
         <div class="recurso-icon">📝</div>
         <h4>Plantilla de FODA Personal</h4>
         <p>Plantilla para hacer tu FODA de forma clara y estructurada.</p>
-        <a href="#" class="btn-descargar">Próximamente</a>
+        <a href="#" class="btn-sm btn-sm-outline">Próximamente</a>
       </div>
-
-      <div class="recurso-card">
+      <div class="recurso-card reveal">
         <div class="recurso-icon">📐</div>
         <h4>Plantilla de Diagnóstico de Marca</h4>
         <p>Herramienta para evaluar tu marca actual y identificar oportunidades.</p>
-        <a href="#" class="btn-descargar">Próximamente</a>
+        <a href="#" class="btn-sm btn-sm-outline">Próximamente</a>
       </div>
     </div>
-
-    <p style="text-align:center; margin-top:30px; color:#aeb9c0; font-size:0.9rem;">
+    <p style="text-align:center; margin-top:30px; color:var(--text-muted); font-size:0.85rem;" class="reveal">
       Más recursos gratuitos en camino. Contactanos para enterarte.
     </p>
   </section>
 
   <!-- ===== SOLICITAR / CONTACTO ===== -->
   <section id="solicitar" class="form-section">
-    <h2>Solicitar</h2>
-    <p>Dime qué necesitas y te respondemos para iniciar.</p>
-
-    <form name="solicitar" method="POST" data-netlify="true">
-      <input type="hidden" name="form-name" value="solicitar">
-
-      <label for="name">Nombre</label>
-      <input type="text" id="name" name="name" placeholder="Tu nombre" required>
-
-      <label for="email">Correo electrónico</label>
-      <input type="email" id="email" name="email" placeholder="tu@email.com" required>
-
-      <label for="tipo">¿Qué te interesa?</label>
-      <select id="tipo" name="tipo" required>
-        <option value="">Seleccioná…</option>
-        <option value="plantilla">Plantilla de landing page</option>
-        <option value="agente">Agente para mi negocio</option>
-        <option value="ambos">Ambos (plantilla + agente)</option>
-        <option value="otro">Otra consulta</option>
-      </select>
-
-      <label for="mensaje">Cuéntanos tu caso (opcional pero útil)</label>
-      <textarea id="mensaje" name="mensaje" rows="4" placeholder="Qué necesitas, tu negocio, lo que tengas en mente…"></textarea>
-
-      <button type="submit">Enviar solicitud</button>
-    </form>
+    <div class="reveal" style="max-width:520px; margin:0 auto; text-align:center;">
+      <span class="section-kicker" style="display:inline-block; margin-bottom:14px;">Empezar</span>
+      <h2 style="font-size:1.9rem; font-weight:700; letter-spacing:-0.02em; margin-bottom:8px;">Solicitar</h2>
+      <p style="color:var(--text-secondary); font-size:1rem; margin-bottom:32px;">Dime qué necesitas y te respondemos para iniciar.</p>
+    </div>
+    <div class="form-box reveal">
+      <form name="solicitar" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="solicitar" />
+        <div class="form-row">
+          <label for="name">Nombre <span class="required">*</span></label>
+          <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+        </div>
+        <div class="form-row">
+          <label for="email">Correo electrónico <span class="required">*</span></label>
+          <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+        </div>
+        <div class="form-row">
+          <label for="tipo">¿Qué te interesa? <span class="required">*</span></label>
+          <select id="tipo" name="tipo" required>
+            <option value="">Seleccioná…</option>
+            <option value="plantilla">Plantilla de landing page</option>
+            <option value="agente">Agente para mi negocio</option>
+            <option value="ambos">Ambos (plantilla + agente)</option>
+            <option value="otro">Otra consulta</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="mensaje">Cuéntanos tu caso <span style="color:var(--text-muted); font-weight:400;">(opcional pero útil)</span></label>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Qué necesitas, tu negocio, lo que tengas en mente…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit">Enviar solicitud</button>
+      </form>
+      <p class="form-note">Respuesta en 24-48 horas. Sin spam, sin compromiso.</p>
+    </div>
   </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo" style="justify-content:flex-start;">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:28px; height:28px;">
+              <rect width="32" height="32" rx="8" fill="url(#g2)"/>
+              <path d="M8 22L16 10L24 22" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs>
+                <linearGradient id="g2" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#00c9ff"/>
+                  <stop offset="1" stop-color="#4ade80"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <span style="font-size:0.95rem;">APPRESCATESMKTG</span>
+          </a>
+          <p>Plantillas de landing page y agentes de IA para emprendimientos y empresas. Herramientas reales, entregadas listas para tu negocio.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Producto</h5>
+          <ul>
+            <li><a href="#plantillas">Plantillas</a></li>
+            <li><a href="#agentes">Agentes</a></li>
+            <li><a href="#galeria">Trabajos</a></li>
+            <li><a href="#recursos">Recursos</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Empresa</h5>
+          <ul>
+            <li><a href="#solicitar">Hablemos</a></li>
+            <li><a href="mailto:hola@apprescatesmktg.com">Contacto directo</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Enlaces</h5>
+          <ul>
+            <li><a href="#" target="_blank">Instagram</a></li>
+            <li><a href="#" target="_blank">LinkedIn</a></li>
+            <li><a href="#" target="_blank">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 APPRESCATESMKTG. Todos los derechos reservados.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram" title="Instagram">IG</a>
+          <a href="#" aria-label="LinkedIn" title="LinkedIn">LI</a>
+          <a href="#" aria-label="WhatsApp" title="WhatsApp">WA</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script>
+    // Nav scroll effect
+    const nav = document.getElementById('nav');
+    let lastScroll = 0;
+    window.addEventListener('scroll', () => {
+      const current = window.scrollY;
+      if (current > 60) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+      lastScroll = current;
+    });
+
+    // Active nav link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const top = section.offsetTop - 120;
+        if (window.scrollY >= top) {
+          current = section.getAttribute('id');
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // Scroll reveal
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    revealElements.forEach(el => revealObserver.observe(el));
+  </script>
 
 </body>
 </html>
