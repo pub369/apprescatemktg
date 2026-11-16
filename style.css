@@ -650,17 +650,33 @@ section {
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   padding: 24px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   transition: all 0.2s ease;
 }
 
 .recurso-card:hover {
-  border-color: var(--border-light);
+  border-color: rgba(0, 201, 255, 0.4);
   background: var(--bg-card-hover);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card);
 }
 
-.recurso-card h4 {
+.recurso-formato {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 5px 9px;
+  border: 1px solid var(--border-light);
+  border-radius: 100px;
+  color: var(--accent);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.recurso-card h3 {
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 6px;
@@ -669,8 +685,23 @@ section {
 .recurso-card p {
   font-size: 0.84rem;
   color: var(--text-secondary);
-  margin-bottom: 16px;
+  margin-bottom: 22px;
   line-height: 1.5;
+  flex: 1;
+}
+
+.recurso-card .btn-sm {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.descargas-contacto {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.descargas-contacto:hover {
+  color: var(--text-primary);
 }
 
 /* ===== FORMULARIO ===== */
