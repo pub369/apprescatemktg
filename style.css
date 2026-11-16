@@ -695,6 +695,11 @@ section {
   width: 100%;
 }
 
+.descargas-actions {
+  margin-top: 32px;
+  text-align: center;
+}
+
 .descargas-contacto {
   color: var(--accent);
   font-weight: 600;
