@@ -31,6 +31,15 @@
         <a href="descargas.html" aria-current="page">Descargas</a>
         <a href="index.html#solicitar" class="nav-cta">Hablemos</a>
       </div>
+      <div class="visit-counter" role="status" aria-label="Visitas totales al sitio">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z" stroke="currentColor" stroke-width="1.7"/>
+          <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.7"/>
+        </svg>
+        <span class="visit-counter-label">Visitas</span>
+        <strong data-visit-count aria-live="polite">…</strong>
+        <span class="visit-counter-dot" aria-hidden="true"></span>
+      </div>
     </div>
   </nav>
 
@@ -97,5 +106,6 @@
       </div>
     </div>
   </footer>
+  <script src="visit-counter.js"></script>
 </body>
 </html>
